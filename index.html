@@ -44,16 +44,60 @@
   <link rel="apple-touch-icon" href="./assets/144x144.png" sizes="144x144" />
   <link rel="apple-touch-icon-precomposed" href="./assets/144x144.png" sizes="144x144" />
   <link rel="shortcut icon" href="./assets/144x144.png" sizes="144x144" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #111827, #0c4a6e);
+    }
+
+    .main_image {
+      border-color: rgb(2 132 199 / 1);
+    }
+
+    .subtitle {
+      color: rgb(229 231 235 / 1);
+      ;
+    }
+  </style>
   <title>Asadulloh.uz</title>
 </head>
 
-<body class="bg-main">
-  <main class="flex items-center justify-center min-h-[100dvh] gap-[2rem]">
+<body class="bg-main py-[2rem] px-[1rem]">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(84845275, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      ecommerce: "dataLayer"
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/84845275" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <main class="flex flex-wrap items-center justify-center min-h-[100dvh] gap-[2rem]">
     <div>
+      <img src="./assets/logo.png" alt="logo" class="w-[3.5rem]">
       <h1 class="text-primary text-[3rem] font-[700]">Hey, I'm Asadulloh!</h1>
-      <p class="text-secondary text-[2rem]">Senior Software Engineer</p>
-      <div class="flex items-center mt-[2rem] flex gap-[1rem]">
-        <a href="https://github.com/asadulloh-pro" target="_blank"
+      <p class="subtitle text-[2rem]">Senior Software Engineer</p>
+      <div class="flex flex-wrap items-center mt-[2rem] flex gap-[1rem]">
+        <a href="https://www.youtube.com/@asadullohpro" target="_blank"
           class="py-[0.5rem] px-[1rem] bg-main text-[1rem] font-[600] text-addition rounded-[0.2rem] border border-addition inline-flex justify-center items-center gap-[0.5rem] hover:shadow-hovered_default">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50"
             class="w-[1.5rem] h-[1.5rem] fill-addition">
@@ -63,7 +107,7 @@
           </svg>
           Youtube
         </a>
-        <a href="https://github.com/asadulloh-pro" target="_blank"
+        <a href="https://www.linkedin.com/in/asadulloh-sadirdinov-8252a3213/" target="_blank"
           class="py-[0.5rem] px-[1rem] bg-main text-[1rem] font-[600] text-addition rounded-[0.2rem] border border-addition inline-flex justify-center items-center gap-[0.5rem] hover:shadow-hovered_default">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50"
             class="w-[1.5rem] h-[1.5rem] fill-addition">
@@ -85,7 +129,8 @@
         </a>
       </div>
     </div>
-    <img src="./assets/images/asadulloh.jpeg" alt="image" class="rounded-full w-[15rem] h-[15rem] border border-[0.5rem] border-addition">
+    <img src="./assets/images/asadulloh.jpeg" alt="image"
+      class="rounded-full w-[15rem] h-[15rem] border border-[0.5rem] main_image">
   </main>
   <script src="./scripts/main.js"></script>
 </body>
