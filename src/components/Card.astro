@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  created_at: Date;
+  href: string;
+}
+
+const { href, title, created_at } = Astro.props;
+---
+
+<a
+  href={`/blog/${href}`}
+  class="px-[0.5rem] py-[1rem] border-b flex flex-col bg-white hover:bg-slate-100"
+>
+  <h4 class="text-[1.2rem] font-semibold truncate-2-lines">
+    {title}
+  </h4>
+  <p class="text-gray-400">
+    {
+      created_at.toLocaleDateString('en-us', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      })
+    }
+  </p>
+</a>

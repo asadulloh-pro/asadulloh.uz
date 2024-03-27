@@ -1,0 +1,26 @@
+<header class="transition-all shadow-sm sticky top-0 z-50 bg-white">
+  <div class="flex items-center justify-between container py-[1rem]">
+    <a
+      href="/"
+      class="flex items-center gap-[1rem] text-[1.5rem] font-semibold text-primary"
+    >
+      Asadulloh Pro</a
+    >
+    <div class="flex items-center justify-end gap-[1rem]">
+      <a href="/blog" class="text-gray-400 hover:text-black">Blog</a>
+      <a href="/aboutme" class="text-gray-400 hover:text-black">About Me</a>
+    </div>
+  </div>
+</header>
+<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (header) {
+      if (window.scrollY > 68) {
+        header.classList.replace('shadow-sm', 'shadow-md');
+      } else {
+        header.classList.replace('shadow-md', 'shadow-sm');
+      }
+    }
+  });
+</script>

@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import constatns from '../../constants/home.json';
+import Card from '../../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+const popular = posts.filter((elem) => elem.data.popular);
+---
+
+<Layout title={constatns.title} description={constatns.description}>
+  <main class="container my-[2.5rem]">
+    <h1 class="text-[2.5rem] text-center">Blog</h1>
+    <div class="grid grid-cols-3 gap-[2rem] mt-[2.5rem]">
+      <div class="col-span-2">
+        {
+          posts.map((elem) => (
+            <Card
+              title={elem.data.title}
+              created_at={elem.data.pubDate}
+              href={elem.slug}
+            />
+          ))
+        }
+      </div>
+      <div class="col-span-1">
+        <div class="sticky top-[4.5rem] flex flex-col gap-[1rem]">
+          <h2 class="text-[1.5rem]">Most Popular</h2>
+          {
+            popular.map((elem) => (
+              <a href={elem.slug} class="text-blue-500 truncate-1-lines">
+                {elem.data.title}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
