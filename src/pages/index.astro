@@ -17,7 +17,7 @@ const social_keys = Object.keys(constatns.social) as Array<
         <div class="flex items-center gap-[1rem] mt-[1rem]">
           {
             social_keys.map((elem) => (
-              <a href={constatns.social[elem]} target="_blank">
+              <a href={constatns.social[elem]} target="_blank" aria-label={elem}>
                 <Icon name={elem} width={30} height={30} />
               </a>
             ))

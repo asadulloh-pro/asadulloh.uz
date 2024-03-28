@@ -30,7 +30,7 @@ const popular = posts.filter((elem) => elem.data.popular);
           <h2 class="text-[1.5rem]">Most Popular</h2>
           {
             popular.map((elem) => (
-              <a href={elem.slug} class="text-blue-500 truncate-1-lines">
+              <a href={`/blog/${elem.slug}`} class="text-blue-500 truncate-1-lines">
                 {elem.data.title}
               </a>
             ))

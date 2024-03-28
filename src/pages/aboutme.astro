@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import constatns from '../constants/home.json';
+import { Image } from 'astro:assets';
+---
+
+<Layout title={constatns.title} description={constatns.description}>
+  <main class="max-w-[768px] mx-auto mt-[2.5rem]">
+    <h1 class="text-[2.5rem] text-center uppercase">About Me</h1>
+    <div class="mt-[2.5rem] grid gap-[2.5rem]">
+      <p class="text-[1.2rem]">
+        I am Asadulloh Sadirdinov, a 22-year-old Software Engineer from Andijan,
+        Uzbekistan, currently living in Tashkent, Uzbekistan.
+      </p>
+      <Image
+        src="/images/laptopandme.png"
+        alt="My image"
+        width="300"
+        height="300"
+        class="w-full aspect-video"
+      />
+      <p class="text-[1.2rem]">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad corporis sint magni, obcaecati saepe repudiandae ex quisquam maiores exercitationem? Optio, modi assumenda rem esse alias, exercitationem voluptas praesentium enim voluptatibus illo voluptatum. Quos eius optio fugit accusamus, eaque ducimus recusandae, nam ratione molestiae amet sed iusto numquam ea unde magnam quis eligendi non saepe doloribus autem, quo quas inventore. Corporis ipsam nesciunt perferendis sint distinctio quo, iusto itaque ipsa commodi sapiente est iste quae harum tempora minima consequuntur recusandae earum inventore. Officiis non error minima incidunt quod magnam repudiandae cumque, praesentium culpa eum explicabo repellendus numquam beatae. Temporibus nulla, rerum dolorum voluptatum placeat sapiente harum explicabo tenetur veniam deserunt tempore commodi dolor voluptate reiciendis sed sint? Minus architecto aut tenetur harum natus veniam libero eligendi! Eum, delectus laudantium. Nam ab in nihil amet est similique dolorum rem quisquam consequuntur veritatis, magni inventore incidunt ipsam unde exercitationem, quia, illum hic. Recusandae laudantium aut nisi impedit fugit, quia explicabo animi deleniti libero laborum obcaecati labore sunt perferendis ut, hic cum! Cupiditate minima debitis nulla amet nostrum odit, recusandae natus quasi maiores autem perspiciatis atque eius facilis, et provident accusantium obcaecati sunt illum consectetur repellat illo quos magnam sed. Ullam hic culpa saepe dolorem maxime inventore, exercitationem ab libero impedit pariatur asperiores molestias eaque iste reiciendis, veritatis expedita dolor sunt ea laborum iusto nostrum harum deleniti modi mollitia? Tenetur, temporibus iure aspernatur aut repudiandae suscipit et optio odio nisi, saepe excepturi? Laborum deleniti ducimus voluptatem fugit recusandae repudiandae nulla? Nesciunt possimus quia, quaerat deserunt sint minima. Nisi distinctio dolores deleniti, eligendi eum pariatur. Eaque, reprehenderit. Nam amet aperiam, ullam quo itaque nemo dolor harum fugit iure quia quas ex eum illum voluptates dolorem ipsa beatae non, cumque dolores, sed necessitatibus expedita id minima. Quas aperiam ad ipsam dignissimos, nulla, nihil officiis minima dicta animi repellendus illum vel voluptatibus eos nobis? Quam atque voluptates nemo nisi voluptatum rerum saepe libero neque similique. Dolorum, voluptates nisi, perferendis quaerat necessitatibus illo quidem minima fuga enim fugit labore doloremque eius in molestias! Quisquam iure rem est itaque cumque tempore necessitatibus expedita nihil, placeat qui soluta odio accusamus minima non ipsam labore omnis nisi a. Sunt earum quaerat quibusdam fugiat cum voluptate nihil! Sit sunt fugit assumenda id, explicabo magni, quia accusamus delectus aut fugiat temporibus a provident quidem dicta pariatur eius voluptatum enim? Doloribus dolorum ipsa quos delectus culpa cum, voluptas pariatur rem quisquam unde? Asperiores, quod.
+      </p>
+      <Image
+        src="/images/aboutme.jpeg"
+        alt="My image"
+        width="300"
+        height="300"
+        class="w-full aspect-video"
+      />
+    </div>
+  </main>
+</Layout>
