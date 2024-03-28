@@ -10,11 +10,11 @@ const social_keys = Object.keys(constatns.social) as Array<
 
 <Layout title={constatns.title} description={constatns.description}>
   <main class="container min-h-[85dvh] flex items-center justify-center">
-    <div class="flex items-center justify-between gap-[2rem] w-full">
+    <div class="flex md:flex-row flex-col-reverse md:text-start  text-center  items-center justify-between gap-[2rem] w-full">
       <div>
-        <h1 class="text-[2.5rem] font-semibold">Asadulloh Sadirdinov</h1>
-        <p class="text-[1.75rem] text-gray-500">Software Engineer</p>
-        <div class="flex items-center gap-[1rem] mt-[1rem]">
+        <h1 class="md:text-[2.5rem] text-[1.5rem] font-semibold">Asadulloh Sadirdinov</h1>
+        <p class="md:text-[1.75rem] text-[1.2rem] text-gray-500">Software Engineer</p>
+        <div class="flex items-center gap-[1rem] mt-[1rem] md:justify-start justify-center">
           {
             social_keys.map((elem) => (
               <a href={constatns.social[elem]} target="_blank" aria-label={elem}>
@@ -23,7 +23,7 @@ const social_keys = Object.keys(constatns.social) as Array<
             ))
           }
         </div>
-        <p class="mt-[2rem] text-[1.2rem] text-gray-700 max-w-[70%]">
+        <p class="mt-[2rem] md:text-[1.2rem] text-[1rem] text-gray-700 md:max-w-[70%] ">
           I'm an educator, content creator and engineer. I work remotely and
           sometimes I create open source projects for developers.
         </p>
@@ -33,7 +33,7 @@ const social_keys = Object.keys(constatns.social) as Array<
         alt="My image"
         width="224"
         height="224"
-        class="rounded-full w-[224px] h-[224px]"
+        class="rounded-full md:w-[224px] md:h-[224px] w-[124px] h-[124px]"
       />
     </div>
   </main>
