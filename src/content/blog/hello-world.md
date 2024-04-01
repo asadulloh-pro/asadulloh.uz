@@ -15,7 +15,7 @@ popular: true
 
 <img src="/images/najot-talim.jpeg" class="aspect-video w-full mt-[1rem] object-cover" />
 
-<p class="md:text-[1.5rem] text-[1rem] mt-[1rem]">I worked while studying. sometimes I worked as a valantor, I especially remember my first job as a valantor in <a href="https://eduon.uz/" class="text-blue-400" target="_blank">Eduon</a>. I received several gifts from Eduon, you can see it <a href="https://www.youtube.com/live/D5MNSiOBS34?si=7I-e73D4TuRQKzX5&t=7314" class="text-blue-400" target="_blank">here</a></p>
+<p class="md:text-[1.5rem] text-[1rem] mt-[1rem]">I worked while studying. sometimes I worked as a volunteer, I especially remember my first job as a volunteer in <a href="https://eduon.uz/" class="text-blue-400" target="_blank">Eduon</a>. I received several gifts from Eduon, you can see it <a href="https://www.youtube.com/live/D5MNSiOBS34?si=7I-e73D4TuRQKzX5&t=7314" class="text-blue-400" target="_blank">here</a></p>
 
 <div class="grid lg:grid-cols-2 gap-[1rem]">
 <img src="/images/eduon.jpg" class="aspect-video w-full mt-[1rem] object-cover" />
