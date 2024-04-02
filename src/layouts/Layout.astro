@@ -16,14 +16,14 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <meta name="viewport" content="width=device-width" />
-    <meta name="keywords" content="Asadulloh, Sadirdinov, Software, Engineer, Tashkent, Uzbekistan, Senior, Frontend, Developer, Blog, asadulloh.uz, asadullohpro, asadulloh.pro " />
-    <meta property="og:url" content="asadulloh.uz" />
-    <meta property="og:title"  content={title} />
     <meta
-      property="og:description"
-      content={description}
+      name="keywords"
+      content="Asadulloh, Sadirdinov, Software, Engineer, Tashkent, Uzbekistan, Senior, Frontend, Developer, Blog, asadulloh.uz, asadullohpro, asadulloh.pro "
     />
-    <meta property="og:site_name" content="Asadulloh Pro"/>
+    <meta property="og:url" content="asadulloh.uz" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Asadulloh Pro" />
     <meta property="og:image" content="/logo_dark.png" />
     <meta property="og:image:width" content="100" />
     <meta property="og:image:height" content="100" />
@@ -73,4 +73,6 @@ const { title, description } = Astro.props;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
   }
+
+
 </style>
