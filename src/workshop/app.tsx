@@ -5,7 +5,6 @@ import {
   NavLink,
   RouterProvider,
 } from 'react-router-dom';
-
 import { Outlet } from 'react-router-dom';
 
 const Navbar = () => {
