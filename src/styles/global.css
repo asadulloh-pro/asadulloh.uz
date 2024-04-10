@@ -1,7 +1,0 @@
-.navlink {
- @apply text-[1rem] px-[1.5rem] py-[0.5rem]  flex w-full mb-[1rem] rounded-md;  
-}
-
-.navlink.active {
-  @apply bg-slate-400;
-}
